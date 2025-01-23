@@ -96,6 +96,8 @@
                     <a href="blog_noticia.html" class="nav-item nav-link">Blogs y Noticias</a>
                     <a href="eventos.html" class="nav-item nav-link">Eventos</a> 
                     <a href="contacto.html" class="nav-item nav-link">Contacto</a>
+                    <a href="https://aprendoyaa.com/aula/login/asel" class="nav-item nav-link" style="border: 1px solid white; border-radius: 10px; padding: 5px 10px;">Acceso al aula virtual</a>
+
                 </div>
                 
             </div>
@@ -115,23 +117,20 @@
             </div>
             <div class="col-lg-6 py-5 py-lg-0 px-3 px-lg-5">
                 <h5 class="text-primary mb-3">Sobre Nosotros</h5>
-                <h1 class="mb-4">15 Años de Experiencia</h1>
-                <p>Contamos con una trayectoria destacada en el sector de seguridad física y patrimonial, durante la cual hemos trabajado arduamente para brindar soluciones integrales y efectivas. A lo largo de estos años, hemos capacitado a cientos de profesionales, promoviendo altos estándares de calidad y compromiso en cada proyecto que emprendemos.</p>
-                <p>Nos enorgullece ser un referente en la profesionalización del sector, ofreciendo programas innovadores de capacitación, asesoramiento personalizado y herramientas avanzadas que fortalecen las capacidades de nuestros asociados. Nuestro equipo está compuesto por expertos reconocidos, comprometidos con el desarrollo continuo y el fortalecimiento de una comunidad sólida de profesionales en seguridad.</p>
+                <h1 class="mb-4">4 Años de Experiencia</h1>
+                <p>
+                    ASPROSEG (Asociación De Profesionales de Seguridad de Bolivia), hace más 4 años con el nombre inicial de FEPROSEG (Federación de Profesionales de Seguridad de Bolivia), inicialmente formando un grupo de WhatsApp, logrando integrar a mas de 150 participantes de diversos sectores, rubros y regiones del país, quienes en las épocas más complejas en las que el país ha atravesado, permitiendo compartir información, experiencias, conocimientos y principalmente alertas, para que los distintos participantes puedan tomar los recaudos necesarios.
 
-                <div class="row py-2">
-                    <div class="col-sm-6">
-                        <i class="flaticon-approved display-3 text-primary"></i>
-                        <h5 class="mt-2">Aprobado por el Gobierno</h5>
-                        <p>Nuestras certificaciones y programas cuentan con aval de instituciones oficiales y reconocidas.</p>
-                    </div>
-                    <div class="col-sm-6">
-                        <i class="flaticon-medal display-3 text-primary"></i>
-                        <h5 class="mt-2">Premios y Reconocimientos</h5>
-                        <p>Hemos sido galardonados por nuestra excelencia y contribución al sector de seguridad.</p>
-                    </div>
-                </div>
-                <a href="" class="btn btn-lg px-4 btn-primary">Conoce Más</a>
+                </p>
+                <p>
+                    Desde el inicio hasta la fecha ha logrado realizar importantes avances, con el inicio de trámite de la obtención de la personería jurídica y de esta forma ser una de las instituciones con mayores perspectivas en cuanto a seguridad.
+
+                </p>
+                
+                <br/>
+                <a href="javascript:void(0);" class="btn btn-lg btn-primary mt-3 mt-md-4 px-4" onclick="showInfoModal()">Conocer Más</a>
+
+            
             </div>
             
         </div>
@@ -204,7 +203,7 @@
     <div class="container-fluid bg-primary my-5 py-5 text-center">
         <h1 class="text-white font-weight-bold mt-5 mb-3">Únete a Nuestra Comunidad</h1>
         <p class="text-white mb-4">Suscríbete y sé parte de nosotros, recibiendo los últimos artículos directamente en tu correo</p>
-        <form class="form-inline justify-content-center mb-5">
+        <form class="form-inline justify-content-center mb-5" id="subscribeForm" action="datos.php" method="POST">
             <div class="input-group">
                 <input type="email" class="form-control-lg" placeholder="Tu Correo Electrónico" required>
                 <div class="input-group-append">
@@ -220,12 +219,12 @@
                 <h5 class="text-primary mb-3">Mensaje del Presidente</h5>
                 <h1 class="m-0">Compromiso con el futuro de la seguridad</h1>
             </div>
-            <div class="testimonial-item px-3">
+            <div class="testimonial-item px-5">
                 <div class="testimonial-text position-relative border bg-light mb-4 py-3 px-4">
                     "En la Asociación de Profesionales en Seguridad de Bolivia (APSB), nos comprometemos a construir un sector de seguridad más profesional y robusto, proporcionando a nuestros miembros las herramientas necesarias para crecer en su carrera y contribuir a un entorno más seguro. A través de nuestra red de apoyo, capacitación y beneficios exclusivos, buscamos fomentar la excelencia y la colaboración entre los profesionales de la seguridad en todo el país."
                 </div>
                 <div class="d-flex align-items-center">
-                    <img class="img-thumbnail bg-light rounded-circle" src="img/testimonial-1.jpg" style="width: 80px; height: 80px; padding: 12px;" alt="Image">
+                    <img class="" src="img/image.jpeg" style="padding: 12px;" alt="Image">
                     <div class="pl-4">
                         <h6 class="text-primary">Humberto Copa Candia</h6>
                         <p class="m-0">Presidente de APSB</p>
@@ -329,5 +328,79 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
 </body>
+
+<div id="infoModal" class="modal">
+    <div class="modal-content">
+        <div style="padding: 30px; background: #f6f6f6;">
+            <h4 class="mb-4 text-center">Para Iniciar Como Afiliado Llena el siguiente formulario</h4>
+            <form id="infoForm" action="guardar_info.php" method="POST">
+                <div class="form-group">
+                    <label for="fullName">Nombre Completo *</label>
+                    <input type="text" class="form-control" id="fullName" name="fullName" required>
+                </div>
+                <div class="form-group">
+                    <label for="ci">C.I. *</label>
+                    <input type="text" class="form-control" id="ci" name="ci" required>
+                </div>
+                <div class="form-group">
+                    <label for="birthdate">Fecha de Nacimiento *</label>
+                    <input type="date" class="form-control" id="birthdate" name="birthdate" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Dirección *</label>
+                    <input type="text" class="form-control" id="address" name="address" required>
+                </div>
+                <div class="form-group">
+                    <label for="city">Ciudad *</label>
+                    <input type="text" class="form-control" id="city" name="city" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Teléfono *</label>
+                    <input type="text" class="form-control" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="position">Cargo Actual *</label>
+                    <input type="text" class="form-control" id="position" name="position" required>
+                </div>
+                <div class="form-group">
+                    <label for="company">Empresa *</label>
+                    <input type="text" class="form-control" id="company" name="company" required>
+                </div>
+                <div class="form-group mb-0" style="text-align: center;">
+                    <button type="submit" class="btn btn-primary px-3">
+                        <i class="fas fa-paper-plane"></i> Enviar Información
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+ 
+<script>
+    window.onload = function() {
+        document.getElementById("commentModal").style.display = "block";
+    }
+    function closeModal() {
+        document.getElementById("commentModal").style.display = "none";
+    }
+    function showInfoModal() {
+        document.getElementById("infoModal").style.display = "block";
+    }
+    function closeInfoModal() {
+        document.getElementById("infoModal").style.display = "none";
+    }
+    window.onclick = function(event) {
+        if (event.target == document.getElementById("commentModal")) {
+            document.getElementById("commentModal").style.display = "none";
+        }
+        if (event.target == document.getElementById("infoModal")) {
+            document.getElementById("infoModal").style.display = "none";
+        }
+    }
+</script>
 
 </html>

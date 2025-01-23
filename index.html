@@ -22,6 +22,7 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
+
 <body class="bg-white">
     <!-- Topbar Start -->
     <div class="container-fluid">
@@ -96,6 +97,8 @@
                     <a href="blog_noticia.html" class="nav-item nav-link">Blogs y Noticias</a>
                     <a href="eventos.html" class="nav-item nav-link">Eventos</a> 
                     <a href="contacto.html" class="nav-item nav-link">Contacto</a>
+                    <a href="https://aprendoyaa.com/aula/login/asel" class="nav-item nav-link" style="border: 1px solid white; border-radius: 10px; padding: 5px 10px;">Acceso al aula virtual</a>
+
 
                 </div>
             </div>
@@ -108,21 +111,23 @@
         <div id="blog-carousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="w-100" src="img/1.jpg" alt="Image">
+                    <img class="w-100" src="img/4.jpg" alt="Image">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <h4 class="text-white m-0">"Protegiendo el futuro de la seguridad en Bolivia"</h4>
                         <h4 class="display-4 m-0 mt-2 mt-md-3 text-white">
                             Asociación de Profesionales<br/>en Seguridad de Bolivia 
                         </h4>
-                        <a href="" class="btn btn-lg btn-primary mt-3 mt-md-4 px-4">Mas información</a>
+                        <!-- Botón para mostrar el modal -->
+                        <a href="javascript:void(0);" class="btn btn-lg btn-primary mt-3 mt-md-4 px-4" onclick="showInfoModal()">Más Información</a>
+
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="w-100" src="img/2.jpg" alt="Image">
+                    <img class="w-100" src="img/6.jpg" alt="Image">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <h4 class="text-white m-0">Aspiramos a destacar por nuestra excelencia, apoyo<br/>a los asociados y contribución a un entorno laboral más seguro y profesional.</h4>
+                        <a href="javascript:void(0);" class="btn btn-lg btn-primary mt-3 mt-md-4 px-4" onclick="showInfoModal()">Más Información</a>
 
-                        <a href="" class="btn btn-lg btn-primary mt-3 mt-md-4 px-4">Mas información</a>
                     </div>
                 </div>
             </div>
@@ -185,11 +190,17 @@
             </div>
             <div class="col-lg-6 py-5 py-lg-0 px-3 px-lg-5">
                 <h5 class="text-primary mb-3">Sobre Nosotros</h5>
-                <h1 class="mb-4">15 Años de Experiencia</h1>
-                <p>Contamos con una trayectoria destacada en el sector de seguridad física y patrimonial, durante la cual hemos trabajado arduamente para brindar soluciones integrales y efectivas. A lo largo de estos años, hemos capacitado a cientos de profesionales, promoviendo altos estándares de calidad y compromiso en cada proyecto que emprendemos.</p>
-                <p>Nos enorgullece ser un referente en la profesionalización del sector, ofreciendo programas innovadores de capacitación, asesoramiento personalizado y herramientas avanzadas que fortalecen las capacidades de nuestros asociados. Nuestro equipo está compuesto por expertos reconocidos, comprometidos con el desarrollo continuo y el fortalecimiento de una comunidad sólida de profesionales en seguridad.</p>
+                <h1 class="mb-4">4 Años de Experiencia</h1>
+                <p>
+                    ASPROSEG (Asociación De Profesionales de Seguridad de Bolivia), hace más 4 años con el nombre inicial de FEPROSEG (Federación de Profesionales de Seguridad de Bolivia), inicialmente formando un grupo de WhatsApp, logrando integrar a mas de 150 participantes de diversos sectores, rubros y regiones del país, quienes en las épocas más complejas en las que el país ha atravesado, permitiendo compartir información, experiencias, conocimientos y principalmente alertas, para que los distintos participantes puedan tomar los recaudos necesarios.
 
-                <div class="row py-2">
+                </p>
+                <p>
+                    Desde el inicio hasta la fecha ha logrado realizar importantes avances, con el inicio de trámite de la obtención de la personería jurídica y de esta forma ser una de las instituciones con mayores perspectivas en cuanto a seguridad.
+
+                </p>
+
+                <!-- <div class="row py-2">
                     <div class="col-sm-6">
                         <i class="flaticon-approved display-3 text-primary"></i>
                         <h5 class="mt-2">Aprobado por el Gobierno</h5>
@@ -200,198 +211,67 @@
                         <h5 class="mt-2">Premios y Reconocimientos</h5>
                         <p>Hemos sido galardonados por nuestra excelencia y contribución al sector de seguridad.</p>
                     </div>
-                </div>
-                <a href="" class="btn btn-lg px-4 btn-primary">Conoce Más</a>
+                </div> -->
+                <a href="javascript:void(0);" class="btn btn-lg btn-primary mt-3 mt-md-4 px-4" onclick="showInfoModal()">Más Información</a>
+
             </div>
             
         </div>
     </div>
 
-    <div class="container pt-5">
-        <div class="d-flex flex-column text-center mb-5">
-            <h5 class="text-primary mb-3">Nuestros Servicios</h5>
-            <h1 class="m-0"> Ofrecemos servicios de alta calidad</h1>
-        </div>
-        <div class="row pb-3">
-            <div class="col-md-6 col-lg-4 mb-4">
-                <div class="card mb-2 p-3">
-                    <img class="card-img-top" src="img/34.jpg" alt="">
-                    <div class="card-body bg-secondary d-flex align-items-center p-0">
-                        <h3 class="flaticon-desk font-weight-normal d-flex flex-shrink-0 align-items-center justify-content-center bg-primary text-white m-0 mr-3" style="width: 45px; height: 45px;"></h3>
-                        <h6 class="card-title text-white text-truncate m-0">Cursos y Talleres</h6>
-                    </div>
-                    <div class="card-footer">
-                        Gestión de riesgos y auditorías en seguridad, manejo de crisis y emergencias, y normativas legales en seguridad física.
-                    </div>
+    <br/>
+    <div class="d-flex flex-column text-center " style="margin: 10px;">
+        <h5 class="text-primary mb-3">La Estructura Organizacional de la APSB</h5>
+        <h1 class="m-0">Apoyamos el crecimiento profesional <br/>y la colaboración en seguridad física y patrimonial.</h1>
+    </div>
+    <div class="orga">
+        <div class="cig">
+          
+          <div class="cig rounded-box">
+            <div class="direction box-dark">
+              <div class="bold large pb10">Presidencia</div>
+              <div class="directionContent">
+                <div class="directionLeft box-director">
+                  <div class="box-director mb10">Máximo representante y responsable de dirigir las estrategias de la Asociación.</div>
                 </div>
+              </div>
             </div>
-            <div class="col-md-6 col-lg-4 mb-4">
-                <div class="card mb-2 p-3">
-                    <img class="card-img-top" src="img/31.jpg" alt="">
-                    <div class="card-body bg-secondary d-flex align-items-center p-0">
-                        <h3 class="flaticon-transportation font-weight-normal d-flex flex-shrink-0 align-items-center justify-content-center bg-primary text-white m-0 mr-3" style="width: 45px; height: 45px;"></h3>
-                        <h6 class="card-title text-white text-truncate m-0">Seminarios y Congresos</h6>
-                    </div>
-                    <div class="card-footer">
-                        Participa en nuestros encuentros anuales donde expertos del sector comparten su conocimiento sobre las últimas tendencias.
-                   
-                    </div>
-                </div>
+            <div class="research_central_services">
+              <div class="research box-research">
+                <div class="bold large mb10">Directorio</div>
+                <div class="box-groups mb10">Vicepresidencia: Apoyo estratégico al presidente.</div>
+                <div class="box-associated mb10">Secretaría General: Encargada de la administración interna y comunicación oficial.</div>
+                <div class="box-associated mb10">Tesorería: Gestión financiera de la Asociación.</div>
+              </div>
+              <div class="central_services box-cs">
+                <div class="bold large mb10">Comités Especializados</div>
+                <div class="box-yellow mb10">Capacitación y Desarrollo</div>
+                <div class="box-yellow">Beneficios y Bienestar</div>
+                <div class="box-yellow">Comunicación y Relaciones Públicas</div>
+              </div>
             </div>
-            <div class="col-md-6 col-lg-4 mb-4">
-                <div class="card mb-2 p-3">
-                    <img class="card-img-top" src="img/33.jpg" alt="">
-                    <div class="card-body bg-secondary d-flex align-items-center p-0">
-                        <h3 class="flaticon-factory font-weight-normal d-flex flex-shrink-0 align-items-center justify-content-center bg-primary text-white m-0 mr-3" style="width: 45px; height: 45px;"></h3>
-                        <h6 class="card-title text-white text-truncate m-0">Capacitaciones Online</h6>
-                    </div>
-                    <div class="card-footer">
-                        Plataforma virtual con contenido exclusivo para miembros, diseñado para mejorar habilidades y conocimientos.
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-2 col-lg-1 mb-4"></div>
-            <div class="col-md-6 col-lg-5 mb-4">
-                <div class="card mb-2 p-3">
-                    <img class="card-img-top" src="img/32.jpg" alt="">
-                    <div class="card-body bg-secondary d-flex align-items-center p-0">
-                        <h3 class="flaticon-home font-weight-normal d-flex flex-shrink-0 align-items-center justify-content-center bg-primary text-white m-0 mr-3" style="width: 45px; height: 45px;"></h3>
-                        <h6 class="card-title text-white text-truncate m-0">Certificaciones Profesionales</h6>
-                    </div>
-                    <div class="card-footer">
-                        Eleva tu perfil profesional con nuestras certificaciones avaladas por instituciones nacionales e internacionales. 
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-6 col-lg-5 mb-4">
-                <div class="card mb-2 p-3">
-                    <img class="card-img-top" src="img/service-5.jpg" alt="">
-                    <div class="card-body bg-secondary d-flex align-items-center p-0">
-                        <h3 class="flaticon-desk font-weight-normal d-flex flex-shrink-0 align-items-center justify-content-center bg-primary text-white m-0 mr-3" style="width: 45px; height: 45px;"></h3>
-                        <h6 class="card-title text-white text-truncate m-0">Ventajas Competitivas</h6>
-                    </div>
-                    <div class="card-footer">
-                        Exclusividad, reconocimiento nacional e internacional, conexiones estratégicas y representación en el sector.
-                    </div>
-                </div>
-            </div>
-            
+          </div>
         </div>
       
-        
+        <div class="side">
+          <div class="sac bold large">
+            Coordinadores Regionales
+          </div>
+          <div class="facilities">
+            <div class="bold large">Representantes en las principales ciudades de Bolivia para facilitar la descentralización de las actividades.</div>
+          </div>
+        </div>
     </div>
-    <!-- Services End -->
-
-
+      
+      
     <!-- Facts Start -->
-    <div class="container-fluid bg-primary my-5 py-5 text-center">
-        <div class="row pt-5">
-            <div class="col-lg-3 col-sm-6 mb-5">
-                <h5 class="fa fa-user-shield mb-4 d-inline-flex align-items-center justify-content-center border rounded-circle text-white" style="width: 50px; height: 50px;"></h5>
-                <h4 class="display-4 text-white mb-3" data-toggle="counter-up">250</h4>
-                <h6 class="text-white m-0">Nuestro Equipo</h6>
-            </div>
-            <div class="col-lg-3 col-sm-6 mb-5">
-                <h5 class="fa fa-users mb-4 d-inline-flex align-items-center justify-content-center border rounded-circle text-white" style="width: 50px; height: 50px;"></h5>
-                <h4 class="display-4 text-white mb-3" data-toggle="counter-up">1500</h4>
-                <h6 class="text-white m-0">Clientes Satisfechos</h6>
-            </div>
-            <div class="col-lg-3 col-sm-6 mb-5">
-                <h5 class="fa fa-shield-alt mb-4 d-inline-flex align-items-center justify-content-center border rounded-circle text-white" style="width: 50px; height: 50px;"></h5>
-                <h4 class="display-4 text-white mb-3" data-toggle="counter-up">1000</h4>
-                <h6 class="text-white m-0">Proyectos Completados</h6>
-            </div>
-            <div class="col-lg-3 col-sm-6 mb-5">
-                <h5 class="fa fa-award mb-4 d-inline-flex align-items-center justify-content-center border rounded-circle text-white" style="width: 50px; height: 50px;"></h5>
-                <h4 class="display-4 text-white mb-3" data-toggle="counter-up">15</h4>
-                <h6 class="text-white m-0">Premios Ganados</h6>
-            </div>
-        </div>
-        
-    </div>
-    <!-- Facts End -->
-
-
-    <!-- Features Start -->
-    <div class="container pt-5">
-        <div class="row">
-            <div class="col-lg-5 mb-5">
-                <h5 class="text-primary mb-3">¿Por qué elegirnos?</h5>
-                <h2 class="mb-4">Seguridad de Alto Nivel</h2>
-                <img class="img-thumbnail mb-4 p-3" src="img/feature.jpg" alt="Imagen">
-                <p>
-                    Ofrecemos una experiencia incomparable en el ámbito de la seguridad, con un enfoque integral que incluye capacitación continua, respaldo laboral, seguros exclusivos y una red de contactos profesionales. Nuestros asociados tienen acceso a recursos de formación de alto nivel, asegurando un desarrollo constante en su carrera y en su labor.
-                </p>
-                <a href="" class="btn btn-lg btn-primary mt-2">Saber más</a>
-            </div>
-            <div class="col-lg-7">
-                <div class="row">
-                    <div class="col-md-6 mb-4">
-                        <div class="d-flex flex-column">
-                            <div class="d-flex align-items-center mb-3">
-                                
-                                <h3 class="flaticon-medal font-weight-normal d-flex flex-shrink-0 align-items-center justify-content-center bg-primary text-white m-0 mr-3" style="width: 45px; height: 45px;"></h3>
-                                <h6 class="text-truncate m-0">Capacitación Continua</h6>
-                            </div>
-                            <p>Acceso a talleres, cursos, certificaciones y congresos de alta calidad, impartidos por expertos nacionales e internacionales, para mantenernos siempre actualizados y preparados.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-4">
-                        <div class="d-flex flex-column">
-                            <div class="d-flex align-items-center mb-3">
-                                <h3 class="flaticon-bodyguard font-weight-normal d-flex flex-shrink-0 align-items-center justify-content-center bg-primary text-white m-0 mr-3" style="width: 45px; height: 45px;"></h3>
-                                <h6 class="text-truncate m-0">Respaldo Laboral</h6>
-                            </div>
-                            <p>Credenciales y certificaciones que validan nuestra experiencia y profesionalismo, ofreciendo seguridad y confianza tanto a nuestros asociados como a sus empleadores.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-4">
-                        <div class="d-flex flex-column">
-                            <div class="d-flex align-items-center mb-3">
-                                <h3 class="flaticon-approved font-weight-normal d-flex flex-shrink-0 align-items-center justify-content-center bg-primary text-white m-0 mr-3" style="width: 45px; height: 45px;"></h3>
-                                <h6 class="text-truncate m-0">Seguros y Asistencia</h6>
-                            </div>
-                            <p>Seguros de vida y asistencia legal exclusivos para nuestros asociados y sus familias, con beneficios especiales en emergencias o situaciones laborales complejas.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-4">
-                        <div class="d-flex flex-column">
-                            <div class="d-flex align-items-center mb-3">
-                                <h3 class="flaticon-policeman font-weight-normal d-flex flex-shrink-0 align-items-center justify-content-center bg-primary text-white m-0 mr-3" style="width: 45px; height: 45px;"></h3>
-                                <h6 class="text-truncate m-0">Networking Profesional</h6>
-                            </div>
-                            <p>Participación en eventos y foros donde nuestros asociados pueden conectar con otros profesionales, empresas y líderes del sector, ampliando su red de contactos.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-4">
-                        <div class="d-flex flex-column">
-                            <div class="d-flex align-items-center mb-3">
-                                <h3 class="flaticon-helmet font-weight-normal d-flex flex-shrink-0 align-items-center justify-content-center bg-primary text-white m-0 mr-3" style="width: 45px; height: 45px;"></h3>
-                                <h6 class="text-truncate m-0">Asesoramiento Integral</h6>
-                            </div>
-                            <p>Consultoría en aspectos legales, operativos y técnicos relacionados con la seguridad física y patrimonial, asegurando una gestión eficiente y conforme a las normativas.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-4">
-                        <div class="d-flex flex-column">
-                            <div class="d-flex align-items-center mb-3">
-                                <h3 class="flaticon-surveillance font-weight-normal d-flex flex-shrink-0 align-items-center justify-content-center bg-primary text-white m-0 mr-3" style="width: 45px; height: 45px;"></h3>
-                                <h6 class="text-truncate m-0">Soporte 24/7</h6>
-                            </div>
-                            <p>Disponibilidad de soporte constante para nuestros asociados, con la posibilidad de resolver dudas o problemas relacionados con la seguridad en cualquier momento.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     
   
     <div class="container-fluid bg-primary my-5 py-5 text-center">
         <h1 class="text-white font-weight-bold mt-5 mb-3">Únete a Nuestra Comunidad</h1>
         <p class="text-white mb-4">Suscríbete y sé parte de nosotros, recibiendo los últimos artículos directamente en tu correo</p>
-        <form class="form-inline justify-content-center mb-5">
+       
+        <form class="form-inline justify-content-center mb-5" id="subscribeForm" action="datos.php" method="POST">
             <div class="input-group">
                 <input type="email" class="form-control-lg" placeholder="Tu Correo Electrónico" required>
                 <div class="input-group-append">
@@ -538,27 +418,118 @@
             </div>
         </div>
     </div>
-    <!-- Footer End -->
-
-
-    <!-- Back to Top -->
     <a href="#" class="btn btn-secondary border back-to-top"><i class="fa fa-angle-double-up"></i></a>
-
-
-    <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/counterup/counterup.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-
-    <!-- Contact Javascript File -->
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script src="mail/jqBootstrapValidation.min.js"></script>
     <script src="mail/contact.js"></script>
-
-    <!-- Template Javascript -->
     <script src="js/main.js"></script>
 </body>
+
+
+<div id="commentModal" class="modal">
+    <div class="modal-content">
+        <div style="padding: 30px; background: #f6f6f6;">
+            <h4 class="mb-4 text-center">Suscríbete a nuestro equipo para comenzar</h4>
+            <form id="subscribeForm" action="datos.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Nombre *</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico *</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="form-group mb-0" style="text-align: center;">
+                    <button type="submit" class="btn btn-primary px-3">
+                        <i class="fas fa-paper-plane"></i> Suscríbete
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<div id="infoModal" class="modal">
+    <div class="modal-content">
+        <div style="padding: 30px; background: #f6f6f6;">
+            <h4 class="mb-4 text-center">Para Iniciar Como Afiliado Llena el siguiente formulario</h4>
+            <form id="infoForm" action="guardar_info.php" method="POST">
+                <div class="form-group">
+                    <label for="fullName">Nombre Completo *</label>
+                    <input type="text" class="form-control" id="fullName" name="fullName" required>
+                </div>
+                <div class="form-group">
+                    <label for="ci">C.I. *</label>
+                    <input type="text" class="form-control" id="ci" name="ci" required>
+                </div>
+                <div class="form-group">
+                    <label for="birthdate">Fecha de Nacimiento *</label>
+                    <input type="date" class="form-control" id="birthdate" name="birthdate" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Dirección *</label>
+                    <input type="text" class="form-control" id="address" name="address" required>
+                </div>
+                <div class="form-group">
+                    <label for="city">Ciudad *</label>
+                    <input type="text" class="form-control" id="city" name="city" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Teléfono *</label>
+                    <input type="text" class="form-control" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="position">Cargo Actual *</label>
+                    <input type="text" class="form-control" id="position" name="position" required>
+                </div>
+                <div class="form-group">
+                    <label for="company">Empresa *</label>
+                    <input type="text" class="form-control" id="company" name="company" required>
+                </div>
+                <div class="form-group mb-0" style="text-align: center;">
+                    <button type="submit" class="btn btn-primary px-3">
+                        <i class="fas fa-paper-plane"></i> Enviar Información
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+ 
+<script>
+    window.onload = function() {
+        document.getElementById("commentModal").style.display = "block";
+    }
+    function closeModal() {
+        document.getElementById("commentModal").style.display = "none";
+    }
+    function showInfoModal() {
+        document.getElementById("infoModal").style.display = "block";
+    }
+    function closeInfoModal() {
+        document.getElementById("infoModal").style.display = "none";
+    }
+    window.onclick = function(event) {
+        if (event.target == document.getElementById("commentModal")) {
+            document.getElementById("commentModal").style.display = "none";
+        }
+        if (event.target == document.getElementById("infoModal")) {
+            document.getElementById("infoModal").style.display = "none";
+        }
+    }
+</script>
+
 
 </html>
