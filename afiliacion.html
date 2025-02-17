@@ -47,7 +47,7 @@
                     <a class="text-white px-2" href="">
                         <i class="fab fa-instagram"></i>
                     </a>
-                    <a class="text-white px-2" href="">
+                    <a class="text-white px-2" href="https://www.youtube.com/@asprosegbolivia451">
                         <i class="fab fa-youtube"></i>
                     </a>
                 </div>
@@ -59,7 +59,7 @@
                     <img src="img/logo.jpeg" style="width: auto; height: 60px;">
                 </a>
             </div>
-            <div class="col-lg-8 text-center text-lg-right">
+            <div class="col-lg-8 text-center text-lg-right" id="datos">
                 <div class="d-inline-flex align-items-center mt-2">
                     <div class="d-inline-flex flex-column text-center pr-3 border-right">
                         <h6>Ciudad</h6>
@@ -67,7 +67,7 @@
                     </div>
                     <div class="d-inline-flex flex-column text-center px-3 border-right">
                         <h6>Correo</h6>
-                        <p class="m-0">info@apsb.com</p>
+                        <p class="m-0">info@asprosegbolivia.com</p>
                     </div>
                     <div class="d-inline-flex flex-column text-center pl-3">
                         <h6>Contacto</h6>
@@ -87,14 +87,17 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                <div class="navbar-nav m-auto py-4">
-                    <a href="index.html" class="nav-item nav-link ">Inicio</a>
+                <div class="navbar-nav m-auto py-4 " id="mini">
+                    <a href="index.html"  class="nav-item nav-link ">Inicio</a>
                     <a href="nosotros.html" class="nav-item nav-link">Quiénes Somos</a>
                     <a href="beneficios.html" class="nav-item nav-link">Beneficios</a>
                     <a href="capacitacion.html" class="nav-item nav-link">Capacitación y Programas</a>
                     <a href="afiliacion.html" class="nav-item nav-link active">Afiliación</a>
                     <a href="blog_noticia.html" class="nav-item nav-link">Blogs y Noticias</a>
                     <a href="eventos.html" class="nav-item nav-link">Eventos</a> 
+                    <a href="material.html" class="nav-item nav-link ">Material Exclusivo</a> 
+                    <a href="oportunidades.html" class="nav-item nav-link">Oportunidades Laborales</a> 
+                    <a href="contacto.html" class="nav-item nav-link">Contacto</a>
                     <a href="https://aprendoyaa.com/aula/login/asel" class="nav-item nav-link" style="border: 1px solid white; border-radius: 10px; padding: 5px 10px;">Acceso al aula virtual</a>
 
                 </div>
@@ -287,9 +290,9 @@
                     <!-- Get In Touch -->
                     <div class="col-md-4 mb-5">
                         <h5 class="text-white mb-4">Ponte en Contacto</h5>
-                        <p><i class="fa fa-map-marker-alt mr-2"></i>123 Calle, La Paz, Bolivia</p>
-                        <p><i class="fa fa-phone-alt mr-2"></i>+591 012 345 678</p>
-                        <p><i class="fa fa-envelope mr-2"></i>info@apsb.org.bo</p>
+                        <p><i class="fa fa-map-marker-alt mr-2"></i>Zona Obrajes, calle 1, Edificio Torres Sur, Oficina TS17</p>
+                        <p><i class="fa fa-phone-alt mr-2"></i>(591) 2780683</p>
+                        <p><i class="fa fa-envelope mr-2"></i>info@asprosegbolivia.com</p>
                         <div class="d-flex justify-content-start mt-4">
                             <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="#"><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="#"><i class="fab fa-facebook-f"></i></a>
@@ -349,7 +352,7 @@
     <div class="modal-content">
         <div style="padding: 30px; background: #f6f6f6;">
             <h4 class="mb-4 text-center">Para Iniciar Como Afiliado Llena el siguiente formulario</h4>
-            <form id="infoForm" action="guardar_info.php" method="POST">
+            <form id="infoForm" action="asproseg_bd_guardar_info.php" method="POST">
                 <div class="form-group">
                     <label for="fullName">Nombre Completo *</label>
                     <input type="text" class="form-control" id="fullName" name="fullName" required>

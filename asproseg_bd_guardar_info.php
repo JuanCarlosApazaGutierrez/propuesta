@@ -2,7 +2,7 @@
 $servername = "localhost"; 
 $username = "root"; 
 $password = ""; 
-$dbname = "suscripciones"; 
+$dbname = "asproseg_bd_suscripciones"; 
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
@@ -19,7 +19,7 @@ $phone = $_POST['phone'];
 $position = $_POST['position'];
 $company = $_POST['company'];
 
-$sql = "INSERT INTO registros_info (fullName, ci, birthdate, address, city, email, phone, position, company) 
+$sql = "INSERT INTO asproseg_bd_registros_info (fullName, ci, birthdate, address, city, email, phone, position, company) 
         VALUES ('$fullName', '$ci', '$birthdate', '$address', '$city', '$email', '$phone', '$position', '$company')";
 
 if ($conn->query($sql) === TRUE) {

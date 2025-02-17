@@ -55,6 +55,10 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
 }
 
+#mini {
+  font-size: 13px;
+}
+
 body {
   margin: 0;
   font-family: "Raleway", sans-serif;
@@ -841,6 +845,12 @@ pre code {
 
 .offset-11 {
   margin-left: 91.6666666667%;
+}
+
+@media (max-width: 767px) {
+  #datos {
+      font-size: 15px;  
+  }
 }
 
 @media (min-width: 576px) {
@@ -3833,6 +3843,9 @@ input[type=button].btn-block {
   background-color: transparent;
   border-color: transparent;
 }
+
+
+
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
   color: #495057;
